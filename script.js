@@ -3,7 +3,6 @@ const faqs = document.querySelectorAll(".faq");
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
     removeActiveClasses();
-
     faq.classList.toggle("active");
   });
 });
