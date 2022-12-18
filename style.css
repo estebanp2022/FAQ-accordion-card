@@ -28,6 +28,10 @@ body {
   border-radius: 20px;
 }
 
+.cube-img {
+  display: none;
+}
+
 .top {
   background-image: url("./images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
@@ -46,9 +50,6 @@ body {
   width: 279px;
   height: 355px;
   margin: auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-end; */
 }
 
 .question-title {
@@ -98,6 +99,13 @@ h1 {
     background-image: url("./images/illustration-woman-online-desktop.svg");
     background-position-x: right;
     background-position-y: center;
+  }
+
+  .cube-img {
+    display: block;
+    position: absolute;
+    margin-left: -95px;
+    margin-top: 135px;
   }
 
   picture img {
