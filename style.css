@@ -71,7 +71,6 @@ body {
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.5s ease;
 }
 
 .faq.active .answer {

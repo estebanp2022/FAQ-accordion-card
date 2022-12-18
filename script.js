@@ -1,10 +1,15 @@
 const faqs = document.querySelectorAll(".faq");
-const question = document.querySelector(".faq");
 
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
+    removeActiveClasses();
+
     faq.classList.toggle("active");
   });
 });
 
-faq.classList.remove("active");
+function removeActiveClasses() {
+  faqs.forEach((faq) => {
+    faq.classList.remove("active");
+  });
+}
