@@ -1,14 +1,15 @@
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach((faq) => {
-  faq.addEventListener("click", () => {
-    removeActiveClasses();
+  faq.addEventListener("click", (e) => {
+    removeActiveClasses(faq.id);
     faq.classList.toggle("active");
   });
 });
 
-function removeActiveClasses() {
+function removeActiveClasses(elementId) {
   faqs.forEach((faq) => {
+    if (elementId === faq.id) return;
     faq.classList.remove("active");
   });
 }
